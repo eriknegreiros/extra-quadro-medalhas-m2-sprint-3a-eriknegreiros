@@ -1,0 +1,229 @@
+
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #c7c7c7 #ffffff;
+  }
+
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #c7c7c7;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+
+
+.header-bg {
+    padding: 1.5vh;
+    background-color: #364FC7;
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisar-bg {
+    background-color: #E9ECEF;
+    height: 30vh;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pesquisar-text {
+    margin-left: 5vw;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 15px;
+}
+
+
+.pesquisar-input-div {
+    margin-left: 5vw;
+    font-family: 'Roboto';
+}
+
+.pesquisar-input {
+    font-family: 'Roboto';
+    border: none;
+    height: 37px;
+    border-radius: 7px;
+    background-color: #F5F5F5;
+    text-align: left;
+    padding-right: 8px;
+    width: 300px;
+}
+
+.pesquisar-input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 8px;
+}
+
+.pesquisar-btn {
+    font-family: 'Roboto';
+    background-color: #364FC7;
+    color: white;
+    border: none;
+    width: 80px;
+    height: 37px;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pesquisar-example {
+    margin-left: 5vw;
+    font-family: 'Inter';
+    font-size: 0.7rem;
+    color: #868E96;
+}
+
+table {
+    margin-top: -81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+tr {
+    border: 1px solid #E9ECEF;
+}
+
+th {
+    border-right: 1px solid #E9ECEF;
+    padding: 25px;
+    width: 95.62px;
+    background-color: #364FC7;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.pais {
+    width: 25vw;
+    text-align: left;
+}
+
+
+.pais_nome {
+    text-align: left;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+
+td {
+    border-right: 1px solid #E9ECEF;
+    align-items: center;
+    padding: 25px;
+    width: 95.62px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 0.75rem;
+}
+
+tr:nth-child(2n) {
+    background-color: #F5F5F5;
+}
+
+.btnMedal {
+    border: none;
+    background-color: rgba(64, 88, 202, 1);
+    color: white;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 500;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.btnMedal:hover{
+    transition: 1.8s;
+    background-color: rgb(77, 105, 246);
+}
+
+.btnPosicao {
+    border: none;
+    background-color: rgba(64, 88, 202, 1);
+    color: white;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 500;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.btnPosicao:hover{
+    transition: 1.8s;
+    background-color: rgb(77, 105, 246);
+}
+
+
+@media(max-width:768px) {
+    .pesquisar-input {
+        width: 200px;
+    }
+
+    table {
+        overflow-x: scroll;
+        margin-top: -40px;
+    }
+
+
+    th {
+        padding: 20px;
+        width: 50px;
+       
+    }
+    
+    .pais {
+        width: 2vw;
+        text-align: left;
+    }
+    
+    
+    .pais_nome {
+        text-align: left;
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    
+    
+    td {
+        border-right: 1px solid #E9ECEF;
+        align-items: center;
+        width: 50px;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 0.75rem;
+    }
+    
+}
